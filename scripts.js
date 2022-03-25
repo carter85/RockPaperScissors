@@ -54,7 +54,6 @@
           } else {
             continue;
           }
-          
         }
         if (userWins > compWins) {
             return "User Wins."
