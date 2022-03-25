@@ -1,4 +1,33 @@
  
+let playerSelection = '';
+
+let selectButton = document.querySelectorAll('.btn');
+let playerChoice = document.getElementById('playerChoice');
+let compChoice = document.getElementById('compChoice');
+
+selectButton.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        let playChoose = playerChoice.textContent = btn.id;
+        return playChoose;
+    });
+});
+
+console.log(playChoose)
+
+ // function generates random interval from 0 to 2, returns value from array as selection
+ function computerPlay() {
+    const playArr = ['rock', 'paper', 'scissors'];
+    let num = Math.floor(Math.random() * 3);
+    return compChoice.textContent = playArr[num];
+  }
+/* 
+
+const playerValue = document.getElementById('playerScore');
+const compValue = document.getElementById('compScore');
+
+
+
+
     // function gets input from player, loops question if answered incorrectly,
     // converts answer to lowercase and to word for comparisons
     function playerSelection() {
@@ -13,12 +42,7 @@
         return input;
       }
     
-      // function generates random interval from 0 to 2, returns value from array as selection
-      function computerPlay() {
-        const playArr = ['rock', 'paper', 'scissors'];
-        let num = Math.floor(Math.random() * 3);
-        return playArr[num];
-      }
+     
     
       // takes inputs from player and computer, compares each possible value,
       // returns winner
@@ -40,6 +64,10 @@
           return "Computer Wins."
         }
       }
+    
+    
+    
+    
     
       function game() {
         let userWins = 0;
@@ -64,3 +92,4 @@
             return "No one wins."
         }
       }
+ */ 
