@@ -58,7 +58,9 @@
         }
         if (userWins > compWins) {
             return "User Wins."
-        } else {
+        } else if (compWins > userWins) {
             return "Computer Wins."
+        } else {
+            return "No one wins."
         }
       }
