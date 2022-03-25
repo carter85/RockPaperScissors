@@ -4,11 +4,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #15202b;
+            color: #fff;
+        }
+        div, h1 {
+            width: 600px;
+            margin: auto;
+            font-size: xx-large;
+            text-align: center;
+        }
+        #choices, #scoreBoard {
+            display: flex;
+        }
+    </style>
 
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <h1>Rock Paper Scissors</h1>
+    <h1>Rock Paper Scissors</h1><br><br>
 
     <div id="mainContainer">
         <div id="container">
@@ -22,8 +37,11 @@
                 <button class="btn" id="scissors">Scissors</button>
             </div>
             <div id="choices">
-                <div><div id="playerChoice"></div><p> vs </p></div><div id="compChoice"></div>
+                <div id="playerChoice"></div>
+                <p> vs </p>
+                <div id="compChoice"></div>
             </div>
+            <br>
             <div id="winner"></div>
         </div>
     </div>
