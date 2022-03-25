@@ -11,11 +11,6 @@ let playerSelection = '';
 let cpuPlay = '';
 let compNum = 0;
 let playNum = 0;
-
-// once button is pressed, runs computer selection function and assigns value,
-// then assigns value from button pressed to the player variables, 
-// updates these values to the DOM, compares values and returns winner, 
-// then updating DOM
  
 playerButton.forEach((btn) => {
   btn.addEventListener('click', () => {
